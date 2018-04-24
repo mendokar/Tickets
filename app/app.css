@@ -1,0 +1,17 @@
+@import "nativescript-theme-core/css/core.light.css";
+
+
+ActionBar{
+    color: #cd8d45;
+    background-color: white;
+} 
+
+.lbl-title{
+    text-align:center;
+    font-size: 25;
+}
+
+Button{
+    background-color: #cd8d45;
+    color: white;
+}

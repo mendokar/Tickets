@@ -1,0 +1,25 @@
+<ActionBar>
+    <Label class="lbl-title" text="Share" textWrap="true"></Label>
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="getBack()"></NavigationButton>
+</ActionBar>
+<ScrollView>
+    <StackLayout style="background-color: white;">
+        <Label class="title" text="Existing TGK member" textWrap="true"></Label>
+        <GridLayout rows="*" columns="*,*" height="70">
+            <Label class="description" row="0" col="0" text="Ticket Number" textWrap="true"></Label>
+            <TextField row="0" col="1" hint="Number" text=""></TextField>
+        </GridLayout>
+        <Label class="separador" textWrap="true"></Label>
+        
+        <Label class="title" text="Invite new member" textWrap="true" ></Label>
+        <GridLayout rows="*" columns="*,*" height="70">
+            <Label class="description" row="0" col="0" text="Ticket Number" textWrap="true"></Label>
+            <TextField row="0" col="1" hint="Email" text=""></TextField>
+        </GridLayout>
+
+        <GridLayout rows="*" columns="*,*" class="bottom">
+            <Label row="0" col="0" class="description" text="Cancel" textWrap="true"></Label>
+            <Button row="0" col="1" text="Send" (tap)="send()"></Button>            
+        </GridLayout>
+    </StackLayout>
+</ScrollView>

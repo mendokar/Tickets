@@ -1,0 +1,47 @@
+<ActionBar>
+        <Label class="lbl-title" text="Tickets" textWrap="true"></Label>
+        <ActionItem tap="onDelete" ios.systemIcon="16" ios.position="right" text="Log out" android.position="popup"></ActionItem>
+</ActionBar>
+<ScrollView>
+        <StackLayout style="background-color: #f6f5f3">
+                <WrapLayout class="image" horizontalAlignment="center">
+                        <Image src="http://via.placeholder.com/100x100" height="150" width="150"></Image>
+                </WrapLayout>
+                <Label text="Edit Profile" class="edit" textWrap="true"></Label>
+
+                <GridLayout rows="*,*" columns="*,*" height="300">
+                        <CardView row="0" col="0" class="cardStyle" margin="10" elevation="40" radius="1" (tap)="viewConnect()">
+                                <GridLayout rows="*,*" columns="*">
+                                        <Image row="0" col="0" src="http://via.placeholder.com/100x100" height="100" width="100"></Image>
+                                        <Label horizontalAlignment="center" row="1" col="0" text="Connections" textWrap="true"></Label>
+                                </GridLayout>
+                        </CardView>
+                        <CardView row="0" col="1" class="cardStyle" margin="10" elevation="40" radius="1" (tap)="viewShare()">
+                                <GridLayout rows="*,*" columns="*">
+                                        <Image row="0" col="0" src="http://via.placeholder.com/100x100" height="100" width="100"></Image>
+                                        <Label horizontalAlignment="center" row="1" col="0" text="My Ticket" textWrap="true"></Label>
+                                </GridLayout>
+                        </CardView>
+                        <CardView row="1" col="0" class="cardStyle" margin="10" elevation="40" radius="1">
+                                <GridLayout rows="*,*" columns="*">
+                                        <Image row="0" col="0" src="http://via.placeholder.com/100x100" height="100" width="100"></Image>
+                                        <Label horizontalAlignment="center" row="1" col="0" text="Customers" textWrap="true"></Label>
+                                </GridLayout>
+                        </CardView>
+                        <CardView row="1" col="1" class="cardStyle" margin="10" elevation="40" radius="1">
+                                <GridLayout rows="*,*" columns="*">
+                                        <Image row="0" col="0" src="http://via.placeholder.com/100x100" height="100" width="100"></Image>
+                                        <Label horizontalAlignment="center" row="1" col="0" text="Suppliers" textWrap="true"></Label>
+                                </GridLayout>
+                        </CardView>
+                </GridLayout>
+        </StackLayout>
+</ScrollView>
+
+<!--
+<ActionBar>
+        <ActionItem tap="onDelete" ios.systemIcon="16" ios.position="right" text="Log out" android.position="popup"></ActionItem>
+        <Label text="Tickets" style="text-align: center;color:#cd8d45;" textWrap="true"></Label>
+
+</ActionBar>
+-->

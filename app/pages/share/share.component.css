@@ -1,0 +1,31 @@
+.separador{
+    border-bottom-width: 0.5;
+    border-bottom-color: lightgrey;
+}
+
+.title{
+    color: #cd8d45;
+    font-style: bold;
+    font-size: 20;
+    margin: 10;
+}
+
+.description{
+    vertical-align: center;
+    color: #000;
+    font-size: 16;
+    margin-left: 10;
+    
+}
+
+TextField{
+    background-color: white;
+    height: 40;
+    margin-right: 10;
+    border-radius: 5;
+}
+
+.bottom{
+    vertical-align: bottom;
+    margin-top: 200;
+}
