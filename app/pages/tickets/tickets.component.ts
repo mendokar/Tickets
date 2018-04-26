@@ -5,6 +5,8 @@ import { RouterExtensions } from 'nativescript-angular/router';
 //import { EventData } from 'data/observable';
 //import { ActivatedRoute } from '@angular/router';
 
+
+
 @Component({
 	selector: 'tickets',
 	templateUrl: './pages/tickets/tickets.component.html',
@@ -13,6 +15,7 @@ import { RouterExtensions } from 'nativescript-angular/router';
 
 export class TicketsComponent implements OnInit {
 
+	_pathImg: any;
 	constructor(private _routEx:RouterExtensions) { }
 
 	ngOnInit() { }
@@ -42,4 +45,11 @@ export class TicketsComponent implements OnInit {
 			}
 		})
 	}
+
+
+
+	
+
+	
+
 }

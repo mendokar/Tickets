@@ -1,0 +1,10 @@
+<ActionBar>
+    <Label class="lbl-title" text="Contact" textWrap="true"></Label>
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="getBack()"></NavigationButton>
+</ActionBar>
+<ScrollView>
+    <StackLayout>
+        <Button text="Send Email" (tap)="sendEmail('example@example.com')"></Button>
+        <Button text="Call Phone" (tap)="callPhone('320-423-55-55')"></Button>
+    </StackLayout>
+</ScrollView>

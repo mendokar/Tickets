@@ -1,0 +1,10 @@
+<ActionBar>
+    <Label class="lbl-title" text="Profile" textWrap="true"></Label>
+    <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="getBack()"></NavigationButton>
+</ActionBar>
+<ScrollView>
+    <StackLayout>
+        <Image [src]="imageSrc" height="200" width="200" (tap)="onSelectSingleTap()"></Image>
+        
+    </StackLayout>
+</ScrollView>

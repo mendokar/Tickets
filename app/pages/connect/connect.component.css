@@ -1,8 +1,10 @@
 .option{
-    border-bottom-color: lightgray;
-    border-bottom-width: 1;
+    border-bottom-width: 1px; 
+    border-bottom-color: #a59674
 }
 
 .name{
     vertical-align: center;
+    color: black;
+    font-weight: bold;
 }
