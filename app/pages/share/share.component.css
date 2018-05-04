@@ -1,6 +1,6 @@
 .separador{
-    border-bottom-width: 0.5;
-    border-bottom-color: lightgrey;
+    border-bottom-width: 1;
+    border-bottom-color:#a59674;
 }
 
 .title{
@@ -19,10 +19,11 @@
 }
 
 TextField{
-    background-color: white;
     height: 40;
     margin-right: 10;
     border-radius: 5;
+    background-color:white;
+    color: black
 }
 
 .bottom{

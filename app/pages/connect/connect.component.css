@@ -1,6 +1,18 @@
+.page{
+    background-color: #f6f5f3
+}
+
 .option{
     border-bottom-width: 1px; 
     border-bottom-color: #a59674
+}
+
+.names{
+    vertical-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 18;
+    margin: 10;
 }
 
 .name{

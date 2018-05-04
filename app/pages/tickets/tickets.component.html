@@ -51,28 +51,58 @@
 <ScrollView>
         <StackLayout>
                 <Gradient row="0" colSpan="3" colSpan="3" direction="to right" colors="rgb(235, 206, 133), #cd8d45">
-                    <GridLayout row="0" col="0" colSpan="3" rows="5,25,35, 35, 25,20" columns="*,*,*,*,*" >
-                      <Image row="0" rowSpan="3" colSpan="5" stretch="aspectFill" src="~/images/curve.png" ></Image>
-                      <Image stretch="aspectFill" (tap)="newOffer('submitTender')" row="1" col="1" colSpan="3" rowSpan="4"  height=" 100" width="100" src="~/images/sample1.png" style="border-radius:50%;"></Image>
-                    </GridLayout>
+                        <GridLayout row="0" col="0" colSpan="3" rows="5,25,35, 35, 25,20" columns="*,*,*,*,*">
+                                <Image row="0" rowSpan="3" colSpan="5" stretch="aspectFill" src="~/images/curve.png"></Image>
+                                <Image stretch="aspectFill" (tap)="newOffer('submitTender')" row="1" col="1" colSpan="3" rowSpan="4" height=" 100" width="100"
+                                        src="~/images/sample1.png" style="border-radius:50%;"></Image>
+                        </GridLayout>
+                        <Label text="Edit Profile" class="edit" textWrap="true"></Label>
+                        <GridLayout rows="*,*" columns="*,*" height="300">
+                                <CardView row="0" col="0" class="cardStyle" margin="10" elevation="40" radius="1" (tap)="viewConnect()">
+                                        <GridLayout rows="*,*" columns="*">
+                                                <Image class="icon" row="0" col="0" src="~/images/windows.png" height="100" width="100"></Image>
+                                                <Label class="lbl" horizontalAlignment="center" row="1" col="0" text="Connections" textWrap="true"></Label>
+                                        </GridLayout>
+                                </CardView>
+                                <CardView row="0" col="1" class="cardStyle" margin="10" elevation="40" radius="1" (tap)="viewShare()">
+                                        <GridLayout rows="*,*" columns="*">
+                                                <Image class="icon" row="0" col="0" src="~/images/windows.png" height="100" width="100"></Image>
+                                                <Label class="lbl" horizontalAlignment="center" row="1" col="0" text="My Ticket" textWrap="true"></Label>
+                                        </GridLayout>
+                                </CardView>
+                                <CardView row="1" col="0" class="cardStyle" margin="10" elevation="40" radius="1">
+                                        <GridLayout rows="*,*" columns="*">
+                                                <Image class="icon" row="0" col="0" src="~/images/windows.png" height="100" width="100"></Image>
+                                                <Label class="lbl" horizontalAlignment="center" row="1" col="0" text="Customers" textWrap="true"></Label>
+                                        </GridLayout>
+                                </CardView>
+                                <CardView row="1" col="1" class="cardStyle" margin="10" elevation="40" radius="1">
+                                        <GridLayout rows="*,*" columns="*">
+                                                <Image class="icon" row="0" col="0" src="~/images/windows.png" height="100" width="100"></Image>
+                                                <Label class="lbl" horizontalAlignment="center" row="1" col="0" text="Suppliers" textWrap="true"></Label>
+                                        </GridLayout>
+                                </CardView>
+                        </GridLayout>
                 </Gradient>
-                <GridLayout   rows="80,10,80,10" columns="*, *"   >
+                <!--<GridLayout   rows="80,10,80,10" columns="*, *"   >
                   <GridLayout row="0" col="0" (tap)="openSection('isWhy')"  rows="40, 40" columns="*" style="border-style: solid;border-width: 1px;background-color: rgb(143, 139, 139);"  >
                     <Label col="0" row="1" style="text-align:center;font-weight:500;color:black" class="labelChart"  text="Connections"></Label>
-                    <!-- insert image row="0" col="0"-->
+                   
                    </GridLayout>
                   <GridLayout row="0" col="1" (tap)="openSection('isWhy')"  rows="40, 40" columns="*" style="border-style: solid;border-width: 1px;background-color: rgb(143, 139, 139);"  >
                     <Label col="0" row="1" style="text-align:center;font-weight:500;color:black" class="labelChart"  text="Tickets"></Label>
-                  <!-- insert image row="0" col="0"-->
+                  
                    </GridLayout>
                   <GridLayout row="2" col="0" (tap)="openSection('isWhy')"  rows="40, 40" columns="*" style="border-style: solid;border-width: 1px;background-color: rgb(143, 139, 139);"  >
                     <Label col="0" row="1" style="text-align:center;font-weight:500;color:black" class="labelChart"  text="Customers"></Label>
-                  <!-- insert image row="0" col="0"--> 
+                  
                   </GridLayout>
                 <GridLayout row="2" col="1" (tap)="openSection('isWhy')"  rows="40, 40" columns="*" style="border-style: solid;border-width: 1px;background-color: rgb(143, 139, 139);"  >
                   <Label col="0" row="1" style="text-align:center;font-weight:500;color:black" class="labelChart"  text="Suppliers"></Label>
-                <!-- insert image row="0" col="0"-->
+                
                 </GridLayout>
-                </GridLayout>
-            </StackLayout>
+                </GridLayout>-->
+                <Label style="margin-top:20" horizontalAlignment="center" text=" Main Menu / Icons here" textWrap="true"></Label>
+
+        </StackLayout>
 </ScrollView>

@@ -1,10 +1,13 @@
-lbl{
+.lbl{
     color: Black;
+    font-size: 18;
+   margin-top: 20;
 }
 
-Image{
-    border-radius: 40;
+.icon{
+    margin-top: 20;
 }
+
 
 .edit{
     color: #e6e1d7;

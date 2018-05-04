@@ -3,14 +3,14 @@
     <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" (tap)="getBack()"></NavigationButton>
 </ActionBar>
 <ScrollView>
-    <StackLayout>
-        <Label text="Connection Requests (6)" class="name" textWrap="true"></Label>
+    <StackLayout class="page">
+        <Label text="Connection Requests (6)" class="names" textWrap="true"></Label>
         
         <GridLayout rows="*" columns="*,*,*,*" class="option" height="70" *ngFor="let item of arrayUsers">
-            <Image row="0" col="0" src="~/images/user.png" height="30" width="30"></Image>
+            <Image row="0" col="0" src="~/images/user.png" height="35" width="35"></Image>
             <Label class="name" row="0" col="1" [text]="item.name" textWrap="true"></Label>
-            <Image row="0" col="2" src="~/images/check.png" height="30" width="30"></Image>
-            <Image row="0" col="3" src="~/images/delete.png" height="30" width="30"></Image>
+            <Image row="0" col="2" src="~/images/check.png" height="35" width="35"></Image>
+            <Image row="0" col="3" src="~/images/delete.png" height="35" width="35"></Image>
         </GridLayout>
     </StackLayout>
 </ScrollView>
