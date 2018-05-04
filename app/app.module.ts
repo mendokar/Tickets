@@ -9,6 +9,7 @@ import { NavegateRoutes, Routes } from "./app.routing";
 import { registerElement } from 'nativescript-angular/element-registry';
 import { CardView } from 'nativescript-cardview';
 registerElement('CardView', () => CardView);
+registerElement("Gradient", () => require("nativescript-gradient").Gradient);
 
 @NgModule({
   declarations: [AppComponent, ...NavegateRoutes],

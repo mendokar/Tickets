@@ -7,7 +7,7 @@ import { RouterExtensions } from "nativescript-angular/router";
 })
 export class AppComponent implements OnInit{
   ngOnInit(): void {
-   this._routEx.navigate(['app-contact'])
+   //this._routEx.navigate(['app-contact'])
   }
   // Your TypeScript logic goes here
 
